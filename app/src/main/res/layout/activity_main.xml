@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="715dp"
+            tools:layout_editor_absoluteY="8dp"
+            android:background="#F0C48B" app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp" tools:srcCompat="@mipmap/pawcat2"
+                android:id="@+id/imageView" app:srcCompat="@mipmap/pawcat2"/>
+        <TextView
+                android:text="Catrinadia Christie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="24sp"
+                android:layout_marginLeft="100dp" android:layout_marginTop="10dp" android:textColor="#FF5722"
+                android:textStyle="bold"/>
+        <TextView
+                android:text="Universitas Teknologi Yogyakarta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView2" android:textSize="24sp"
+                android:layout_marginTop="10dp" android:layout_marginLeft="25dp" android:textStyle="bold"
+                android:textColor="#141313"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+            <Button
+                    android:text="Facebook"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content" android:id="@+id/btn_facebook" android:layout_weight="0"
+                    android:textColor="#AA1616" android:backgroundTint="#EEB4B3"/>
+            <Button
+                    android:text="Instagram"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content" android:id="@+id/btn_instagram" android:layout_weight="0"
+                    android:layout_marginRight="50dp" android:textColor="#AA1616" android:backgroundTint="#EEB4B3"/>
+        </LinearLayout>
+        <TextView
+                android:text="MP3 Player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView3" android:textColor="#8BC34A"
+                android:textSize="24sp" android:layout_marginLeft="130dp" android:layout_marginTop="25dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:backgroundTint="#383D09">
+            <Button
+                    android:text="Play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/btn_play" android:layout_weight="1"
+                    android:textColor="#AA1616" android:backgroundTint="#9BD4DD"/>
+            <Button
+                    android:text="Pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/btn_pause" android:layout_weight="1"
+                    android:textColor="#AA1616" android:backgroundTint="#9BD4DD"/>
+            <Button
+                    android:text="Stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/btn_stop" android:layout_weight="1"
+                    android:textColor="#AA1616" android:backgroundTint="#9BD4DD"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
